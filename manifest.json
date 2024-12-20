@@ -1,8 +1,8 @@
 {
-  "manifest_version": 3,
-  "name": "My Chrome Extension",
+  "name": "Content Filter Extension",
+  "description": "A Basic Content Filter Extension for your browser",
   "version": "1.0",
-  "description": "A React Chrome Extension",
+  "manifest_version": 3,
   "permissions": ["storage"],
   "action": {
     "default_popup": "index.html",
