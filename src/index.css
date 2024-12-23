@@ -1,0 +1,21 @@
+.App {
+  color: white;
+  text-align: center;
+}
+
+.SidePanel {
+  background-color: #282c34;
+  color: blue;
+  padding: 1rem;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 15rem;
+  height: 15rem;
+  background-color: green;
+}
