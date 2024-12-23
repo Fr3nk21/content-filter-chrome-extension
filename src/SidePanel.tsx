@@ -10,7 +10,7 @@ function SidePanel() {
     });
   }, []);
 
-  return <div className="SidePanel bg-red-400 p-4">Side Panel</div>;
+  return <div className="bg-red-400 p-4">Side Panels</div>;
 }
 
 export default SidePanel;
