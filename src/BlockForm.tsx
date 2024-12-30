@@ -49,6 +49,7 @@ function BlockForm() {
     // If validation passes, log the URL and clear errors
     console.log("Website to block:", value);
     setError(""); // Clear any existing errors messages
+    setValue(""); // Clear any value in the input field
   };
 
   return (
