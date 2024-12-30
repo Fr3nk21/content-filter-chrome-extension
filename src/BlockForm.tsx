@@ -1,22 +1,27 @@
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 
 function BlockForm() {
   const [value, setValue] = useState("");
 
-  const handleBlock = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
-    console.log({ value });
+  };
+
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
+    console.log("Website to block:", value);
   };
 
   return (
-    <div className="p-4 bg-red-400">
+    <form onSubmit={handleSubmit} className="p-4 bg-red-400">
       <h1 className="bg-green-400">
         Select the website you would like to block
       </h1>
       <input
         type="text"
         value={value}
-        onChange={handleBlock}
+        onChange={handleChange}
+        placeholder="Enter website URL"
         className="w-full px-3 py-2 border rounded-md"
       />
       <button
@@ -25,7 +30,7 @@ function BlockForm() {
       >
         Block website
       </button>
-    </div>
+    </form>
   );
 }
 
