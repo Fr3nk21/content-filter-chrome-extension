@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import SidePanel from "./SidePanel";
+import BlockForm from "./BlockForm";
 import "./index.css";
 
 const rootElement = document.createElement("div");
@@ -9,6 +9,6 @@ document.body.appendChild(rootElement);
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <SidePanel />
+    <BlockForm />
   </React.StrictMode>
 );
