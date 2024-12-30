@@ -14,7 +14,7 @@ function BlockForm() {
 
       // Regular expression to validate domain format
       const domainRegex =
-        /^[a-zA-Z0-9] [a-zA-Z0-0-] {1,61} [a-zA-Z0-9]\.[a-zA-Z]{2,}$/;
+        /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/;
 
       return domainRegex.test(processedUrl);
     } catch {
