@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import BlockForm from "./BlockForm";
+import App from "./App";
 import "./index.css";
 
 const rootElement = document.createElement("div");
@@ -9,6 +9,6 @@ document.body.appendChild(rootElement);
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <BlockForm />
+    <App />
   </React.StrictMode>
 );
